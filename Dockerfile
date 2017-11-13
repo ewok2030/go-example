@@ -1,6 +1,6 @@
 # If building outside the image, use:
 FROM scratch
-COPY $GOPATH/bin/go-example /
+COPY bin/go-example /
 CMD ["/go-example"]
 
 # If building inside the image, use the following:
