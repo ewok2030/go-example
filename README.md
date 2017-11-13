@@ -11,7 +11,7 @@ The base `golang:alpine` Docker image is several hundred MBs in size, to run a t
 Compile the application before building the image:
 
 ```bash
-CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o go-example .
+CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o bin/go-example .
 ```
 
 ```bash

@@ -1,7 +1,7 @@
 # If building outside the image, use:
 FROM scratch
-COPY go-example.so /
-CMD ["/go-example.so"]
+COPY $GOPATH/bin/go-example /
+CMD ["/go-example"]
 
 # If building inside the image, use the following:
 
